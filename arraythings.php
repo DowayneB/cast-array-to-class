@@ -23,7 +23,7 @@ class ArrayThings
             if (method_exists($class,$methodName)) {
                 $class->$methodName($item);
             }elseif ($strict){
-                throw new InternalBusinessLogicException(sprintf(
+                throw new \Exception(sprintf(
                     'The array key [%s] is not compatible with %s',
                     $key,
                     $className
