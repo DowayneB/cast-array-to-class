@@ -1,3 +1,5 @@
+<?php
+
 class ArrayThings
 {
  public static function castArrayToClass(array $array, string $className, array $args = [], bool $strict = false): object
@@ -34,3 +36,5 @@ class ArrayThings
         return $class;
     }
 }
+
+?>
